@@ -69,34 +69,7 @@ var objectFlattener = Object.keys(numObject).reduce((r, k) => {
 
 inputNum.addEventListener('keypress', (e) => {
     console.log(typeof(inputNum.value), inputNum.value);
-    if (inputNum.value.length + 1 === 4) {
-        console.log(check('070123'), 'search');
-    }
-
 });
-
-
-
-
-function check(num) {
-    let numb = num;
-
-    const search = arr.filter(a => {
-        if (numb === a) {
-            return 'yes';
-        } else {
-            return false;
-        }
-    })
-
-    if (!search[0]) {
-        return 'Invalid prefix';
-    } else {
-        return search[0];
-    }
-
-}
-
 
 
 
